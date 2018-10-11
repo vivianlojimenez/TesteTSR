@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:background="@mipmap/bg"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_28sdp"
+            android:paddingRight="@dimen/_28sdp"
+            android:descendantFocusability="blocksDescendants">
+
+            <RelativeLayout
+                android:id="@+id/rel_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_155sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/img_item_placeholder"
+                    android:layout_width="@dimen/_21sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@mipmap/ampulheta"
+                    android:layout_centerInParent="true"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/img_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_155sdp"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/txt_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/bg_btn_round_yellow"
+                android:text="@string/btn_back"
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

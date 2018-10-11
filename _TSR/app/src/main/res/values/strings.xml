@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TSR - Vivian</string>
+    <string name="title_main">Olá, %s\n Confira nossas ofertas!</string>
+    <string name="btn_add_kart">ADICIONAR AO CARRINHO</string>
+    <string name="msg_toast_add_kart">Adicionado ao carrinho</string>
+    <string name="btn_back">VOLTAR</string>
+    <string name="product">Produtos</string>
+    <string name="kart">Carrinho</string>
+    <string name="msg_error">Ocorreu um erro. Por favor, tente novamente mais tarde.\nCode: %d</string>
+</resources>

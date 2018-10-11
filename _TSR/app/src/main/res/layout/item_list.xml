@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_155sdp"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/img_item_placeholder"
+            android:layout_width="@dimen/_21sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:src="@mipmap/ampulheta"
+            android:layout_centerInParent="true"
+            tools:ignore="ContentDescription"
+            />
+
+        <ImageView
+            android:id="@+id/img_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_155sdp"
+            tools:ignore="ContentDescription"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_2sdp"
+        >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/bg_border_yellow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/bg_btn_round_red"
+        android:text="@string/btn_add_kart"
+        />
+
+</LinearLayout>
